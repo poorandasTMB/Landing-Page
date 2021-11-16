@@ -1,0 +1,392 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* container */
+.container{
+    max-width: 1200px;
+    padding: 0  20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* variable */
+:root {
+    --txt-white: #fff;
+    --txt-black: #000;
+    --txt-golden: #B0976D;
+  }
+
+  .pt-130{
+      padding-top: 130px;
+  }
+  .pb-120{
+      padding-bottom: 120px;
+  }
+/* body */
+body{
+    font-family:"roboto";
+}
+
+
+/* images css  code */
+img{
+    max-width: 100%;
+}
+
+/* anchor css  code */
+a{
+    text-decoration: none;
+}
+
+/* li css  code */
+li{
+    list-style: none;
+}
+
+
+/* button css  code */
+button{
+    cursor: pointer;
+}
+
+/* header css  code */
+header{
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/* header css  code */
+.header__inner{
+    display: grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items: center;
+}
+
+/* nav list css  code */
+.nav__list{
+    display: flex;
+    align-items: center;
+}
+
+/* nav item css  code */
+
+.nav__item{
+    margin-right: 42px;
+}
+
+/* nav link css  code */
+.nav__link{
+    color:var(--txt-white) ;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase   ;
+}
+.nav__link.active{
+    color:#B0976D;
+}
+
+/* nav link css  code */
+.nav__link:hover{
+    color:#B0976D;
+    transition: 0.3s;
+}
+
+/* header cart css  code*/
+.header__cart{
+    text-align: end;
+    position: relative;
+}
+.card__number{
+    position: absolute;
+    top: -17px;
+    background-color: var(--txt-golden);
+    border-radius: 50%;
+    padding: 3px 8px;
+}
+
+/* cart number css  code */
+.card__number{
+    color: #fff;
+}
+/* modifiar text-align-centeer  css  code*/
+.text--center{
+    text-align: center;
+}
+
+/* section banner css  code */
+
+/* section heading css  code */
+.sec__heading{
+    color: #B0976D;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+/* section banner  css  code */
+ .sec__banner .sec__img img{
+    width:100% ;
+}
+
+/* section content  css  code */
+
+.sec__banner__inner{
+    position: relative;
+    height: 100%;
+} 
+
+.sec__banner{
+    padding-top: 120px;
+}
+
+.sec__banner .sec__sub__heading{
+    max-width: 328px;
+}
+.sec__banner .container{
+    position: relative;
+}
+.banner__sec__inner{
+    min-height: calc(600px - 240px);
+    height: 100%;
+}
+.sec__banner .sec__content{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+.sec__banner{
+    background-image: url('../images/img/banner-img.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    margin-top: 115px;
+}
+.sec__sub__heading{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 80px;
+    margin: 5px 0 45px;    
+}
+
+/* cta button css  code */
+.cta-btn{
+    padding: 23px 42px;
+    background-color: #000;
+    color:#fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    border: none;
+}
+
+/* Generation of Cigar Makers section css  code */
+.gen__cigar__markers .sec__sub__heading{
+    color: var(--txt-black);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 54px;
+
+}
+
+.gen__cigar__markers .sec__img{
+    position: relative;
+}
+.play__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* section El Premario css  code */
+.sec__premario{
+    background-color:#F1F1F1 ;
+    padding: 42px 0 10px;
+}
+
+/* section content css  code  */
+.sec__premario .sec__content{
+    display: flex;
+    gap: 26px;
+    align-items: center;
+}
+
+.sec__year,.product__price{
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 45px;
+    color: var(--txt-black);
+    margin-bottom: 12px;
+}
+
+.release__item{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--txt-golden);
+    
+}
+
+.sec__premario .sec__sub__heading{
+    color: var(--txt-black);
+    margin-bottom: 0;
+}
+
+/* section brief css  code */
+.sec__premario .sec__brief{
+    max-width: 367px;
+    margin-bottom: 25px;
+}
+.sec__premario .sec__brief,.cigar__specialist{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--txt-black);
+}
+
+.cigar__specialist{
+    margin-top: 157px;
+}
+
+.cigar__specialist a{
+    color: var(--txt-golden);
+}
+
+/* section premium cigars css  code */
+.sec__premium__cigars .sec__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--txt-golden);
+    max-width: 932px;
+    margin: 0 auto;
+    line-height: 0;
+}
+
+/* section text css  code */
+.sec__premium__cigars .sec__text{
+    width: 50%;
+}
+.sec__premium__cigars .sec__text .sec__heading{
+    max-width: 307px;
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    color: var(--txt-white);
+    text-align: center;
+    
+}
+/* contect us section css  code */
+.sec__contect__us{
+    position: relative;
+    background-color: var(--txt-black);
+}
+.sec__contect__us:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--txt-black);
+    opacity: 0.8;
+}
+.form__inner {
+    display: flex;
+    justify-content: center;
+}
+
+.sec__contect__us .sec__inner img{
+    width: 100%;
+    min-height: 338px;
+}
+.cta-btn.submit__btn{
+    background-color: var(--txt-golden);
+    color: var(--txt-white);
+    font-size: 12px;
+    line-height: 14px;
+}
+.sec__contect__us .sec__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 9;
+}
+.form__input{
+    padding: 18px 26px;
+    border-radius: 0;
+    border: 2px solid var(--txt-white);
+    background: transparent;
+    color: var(--txt-white);
+}
+.form__input::placeholder{
+    color: var(--txt-white);
+}
+.form__input:focus{
+    outline:none ;
+}
+.sec__contect__us .sec__heading,.sec__footer .sec__heading{
+    font-size: 48px;
+    line-height: 63px;
+    font-weight: 400;
+    color: var(--txt-white);
+}
+.sec__contect__us .sec__brief{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 16px 0 41px;
+    color: var(--txt-white);
+}
+
+/* footer css  code */
+.sec__footer{
+    padding:104px 0 77px;
+    background-color:var(--txt-black) ;
+}
+.footer__name,.copy__right__txt,.footer--condition .nav__link{
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    color: var(--txt-golden);
+}
+
+/* copy right text css  code */
+.copy__right__txt{
+    color:#666666;
+}
+.copy__right__items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 97px;
+}
+
+/* footer codition css  code */
+.footer--condition .nav__link{
+    margin-right: 50px;
+    color:#666666;
+}
+
+/* socila media css  code */
+.social--media a{
+    margin-right: 38px;
+}
+.social--media img:last-child{
+    margin-right: 0;
+}
+.copy__right__items .nav__item{
+    margin-right: 0;
+}
